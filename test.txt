@@ -1,0 +1,267 @@
+====================================================
+USER RECORD 01
+====================================================
+
+Name: Olivia Carter
+Phone: +1 (415) 555-0182
+Alt Phone: +1-628-555-4419 ext. 203
+Email: olivia.carter@example.com
+Work Email: ocarter@northbridge.ai
+Website: https://www.oliviacarter.dev
+Portfolio: http://portfolio.oliviacarter.dev/projects?id=14
+Instagram Handle: @olivia.codes
+Instagram Profile: https://instagram.com/olivia.codes
+LinkedIn: https://www.linkedin.com/in/oliviacarter
+GitHub Username: oliviacodes
+GitHub Profile: https://github.com/oliviacodes
+GitHub Repo: https://github.com/oliviacodes/regex-automation-suite
+
+Chat Log:
+[09:14 AM] Olivia: hey, send the API docs to olivia.carter@example.com
+[09:15 AM] Ryan: sure, also check https://docs.northbridge.ai/api/v2
+[09:16 AM] Olivia: cool. push updates to github.com/oliviacodes/regex-automation-suite
+
+====================================================
+USER RECORD 02
+====================================================
+
+Name: Arjun Mehta
+Phone: +91 98765 43210
+WhatsApp: +91-99887-77665
+Email: arjun.mehta@protonmail.com
+Backup Email: arjunm.business@gmail.com
+Website: https://arjunmehta.in
+Instagram Handle: @arjun.jpeg
+Instagram Profile: https://www.instagram.com/arjun.jpeg/
+LinkedIn: https://linkedin.com/in/arjun-mehta-analytics
+GitHub Username: arjunm-dev
+GitHub Profile: https://github.com/arjunm-dev
+GitHub Repo: https://github.com/arjunm-dev/ml-data-pipelines
+
+Chat Log:
+[22:01] Arjun: bro did you deploy the build?
+[22:03] Neha: yes, check https://staging.arjunmehta.in
+[22:04] Arjun: nice. also add me on insta @arjun.jpeg
+
+====================================================
+USER RECORD 03
+====================================================
+
+Name: Sofia Alvarez
+Phone: +34 612 44 88 90
+Email: sofia.alvarez@outlook.es
+Recovery Email: s.alvarez.dev@yahoo.com
+Website: https://sofia-alvarez.io
+Instagram Handle: @sofia.codes
+Instagram Profile: https://instagram.com/sofia.codes
+LinkedIn: https://www.linkedin.com/in/sofia-alvarez-dev
+GitHub Username: sofia-alv
+GitHub Profile: https://github.com/sofia-alv
+GitHub Repo: https://github.com/sofia-alv/open-cv-parser
+
+Chat Log:
+[08:41] Sofia: repo moved to https://github.com/sofia-alv/open-cv-parser
+[08:42] Daniel: got it
+[08:43] Sofia: ping me via sofia.alvarez@outlook.es if needed
+
+====================================================
+USER RECORD 04
+====================================================
+
+Name: Ethan Brooks
+Phone: +44 7700 900321
+Office Phone: +44 (20) 7946 0018
+Email: ethan.brooks@consultant.co.uk
+Website: https://ethanbrooks.uk
+Instagram Handle: @ethan.visuals
+Instagram Profile: https://www.instagram.com/ethan.visuals
+LinkedIn: https://linkedin.com/in/ethanbrooks
+GitHub Username: ebrooks-tech
+GitHub Profile: https://github.com/ebrooks-tech
+GitHub Repo: https://github.com/ebrooks-tech/infrastructure-monitor
+
+Chat Log:
+[11:20] Ethan: server logs are broken again
+[11:21] Mia: see github repo?
+[11:21] Ethan: https://github.com/ebrooks-tech/infrastructure-monitor
+
+====================================================
+USER RECORD 05
+====================================================
+
+Name: Hana Kim
+Phone: +82-10-9988-2211
+Email: hana.kim@naver.com
+Work Email: hkim@seoulrobotics.kr
+Website: https://hanakim.dev
+Instagram Handle: @hana.byte
+Instagram Profile: https://instagram.com/hana.byte
+LinkedIn: https://linkedin.com/in/hana-kim-ai
+GitHub Username: hanabyte
+GitHub Profile: https://github.com/hanabyte
+GitHub Repo: https://github.com/hanabyte/neural-sim-engine
+
+Chat Log:
+[14:55] Hana: commit pushed
+[14:57] Leo: which branch?
+[14:58] Hana: dev-rl-training on github.com/hanabyte/neural-sim-engine
+
+====================================================
+USER RECORD 06
+====================================================
+
+Name: Lucas Pereira
+Phone: +55 (11) 91234-7788
+Email: lucas.pereira@uol.com.br
+Backup Email: lp.devops@gmail.com
+Website: https://lucaspereira.tech
+Instagram Handle: @lucas.deploys
+Instagram Profile: https://instagram.com/lucas.deploys
+LinkedIn: https://linkedin.com/in/lucas-pereira-cloud
+GitHub Username: lucasp-cloud
+GitHub Profile: https://github.com/lucasp-cloud
+GitHub Repo: https://github.com/lucasp-cloud/k8s-cost-tracker
+
+Chat Log:
+[17:12] Lucas: update the kube configs
+[17:14] Nina: done
+[17:14] Lucas: cool, upload docs to https://lucaspereira.tech/docs
+
+====================================================
+USER RECORD 07
+====================================================
+
+Name: Emma Johansson
+Phone: +46 70 555 19 82
+Email: emma.j@fastmail.com
+Website: https://emmajohansson.se
+Instagram Handle: @emma.uiux
+Instagram Profile: https://instagram.com/emma.uiux
+LinkedIn: https://linkedin.com/in/emma-johansson-design
+GitHub Username: emmaux
+GitHub Profile: https://github.com/emmaux
+GitHub Repo: https://github.com/emmaux/design-token-system
+
+Chat Log:
+[07:31] Emma: did you review the figma export?
+[07:32] Alex: not yet
+[07:33] Emma: repo here https://github.com/emmaux/design-token-system
+
+====================================================
+USER RECORD 08
+====================================================
+
+Name: Ahmed Nasser
+Phone: +971-50-778-1122
+Email: ahmed.nasser@zohomail.com
+Website: https://ahmednasser.dev
+Instagram Handle: @ahmed.codes
+Instagram Profile: https://instagram.com/ahmed.codes
+LinkedIn: https://linkedin.com/in/ahmed-nasser-devops
+GitHub Username: ahmedops
+GitHub Profile: https://github.com/ahmedops
+GitHub Repo: https://github.com/ahmedops/docker-lab
+
+Chat Log:
+[19:08] Ahmed: email the configs to ahmed.nasser@zohomail.com
+[19:09] Tariq: okay
+[19:10] Ahmed: also check docker-lab repo
+
+====================================================
+USER RECORD 09
+====================================================
+
+Name: Chloe Martin
+Phone: +33 6 44 88 22 91
+Email: chloe.martin@icloud.com
+Website: https://chloemartin.fr
+Instagram Handle: @chloe.builds
+Instagram Profile: https://www.instagram.com/chloe.builds
+LinkedIn: https://linkedin.com/in/chloe-martin-data
+GitHub Username: chloem-data
+GitHub Profile: https://github.com/chloem-data
+GitHub Repo: https://github.com/chloem-data/etl-observability
+
+Chat Log:
+[12:44] Chloe: issue fixed
+[12:45] Ben: where's the patch?
+[12:45] Chloe: github.com/chloem-data/etl-observability/releases
+
+====================================================
+USER RECORD 10
+====================================================
+
+Name: Kenji Tanaka
+Phone: +81-90-3344-7788
+Email: kenji.tanaka@pm.me
+Work Email: k.tanaka@tokyolabs.jp
+Website: https://kenjitanaka.jp
+Instagram Handle: @kenji.dev
+Instagram Profile: https://instagram.com/kenji.dev
+LinkedIn: https://linkedin.com/in/kenji-tanaka-ai
+GitHub Username: kenji-labs
+GitHub Profile: https://github.com/kenji-labs
+GitHub Repo: https://github.com/kenji-labs/autonomous-agent-framework
+
+Chat Log:
+[03:11] Kenji: deployment failed again
+[03:12] Sara: check CI logs
+[03:13] Kenji: https://github.com/kenji-labs/autonomous-agent-framework/actions
+
+====================================================
+ADDITIONAL CUSTOM ENTITY TYPES
+====================================================
+
+Credit Card: 4532-1122-9988-7741
+IBAN: DE89 3704 0044 0532 0130 00
+IPv4 Address: 192.168.44.12
+IPv6 Address: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+MAC Address: 00:1B:44:11:3A:B7
+UUID: 550e8400-e29b-41d4-a716-446655440000
+JWT Token:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGVtb191c2VyIn0.signature123
+
+Amazon S3 URL:
+https://demo-bucket.s3.amazonaws.com/archive/report.csv
+
+Google Drive Link:
+https://drive.google.com/file/d/1AbCdEfGhIjKlMnOpQr/view
+
+Discord Username:
+bytehunter#4481
+
+Telegram Handle:
+@deepcrawler
+
+Slack Workspace URL:
+https://deepops.slack.com
+
+Bitcoin Wallet:
+bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh
+
+Ethereum Wallet:
+0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe
+
+Date Formats:
+2026-05-20
+20/05/2026
+May 20, 2026
+
+Coordinates:
+19.0760, 72.8777
+
+Random File Paths:
+C:\Users\admin\Documents\secrets.txt
+/var/log/nginx/access.log
+
+XML Snippet:
+<user id="1024" role="admin">Olivia Carter</user>
+
+JSON Snippet:
+{
+  "username": "oliviacodes",
+  "email": "olivia.carter@example.com",
+  "active": true
+}
+
+Regex test data. Humanity distilled into contact fields and deployment failures. Beautiful in a bleak, enterprise-approved sort of way.
