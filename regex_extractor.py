@@ -51,6 +51,10 @@ def clipboard_matcher(f):
         print("Clipboard Text:", clipboard_text)
     return 0
 
+def insta_handle_extractor(f):
+    pass
+    return 0
+
 # main 
 f = 'test.txt'
 phone_number_extractor(f)
