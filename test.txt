@@ -265,3 +265,418 @@ JSON Snippet:
 }
 
 Regex test data. Humanity distilled into contact fields and deployment failures. Beautiful in a bleak, enterprise-approved sort of way.
+
+
+Some CREEPY stuffs...
+
+06/08/25, 12:17 - Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them. *Learn more*.
+13/08/25, 11:59 - Sayak Das: Hi
+13/08/25, 11:59 - Sayak Das: Sayak here
+18/08/25, 13:20 - Brainware Sumon: Hello sayak <This message was edited>
+30/10/25, 16:55 - Brainware Sumon: https://codeforces.com/problemset/problem/1794/C
+30/10/25, 17:16 - Sayak Das: thanks 👍
+30/10/25, 17:21 - Brainware Sumon: Ok
+03/11/25, 10:14 - Sayak Das: <Media omitted>
+03/11/25, 10:15 - Brainware Sumon: Updated routine ta nei ?? Ekhane bootcamp er date mentioned nei
+03/11/25, 10:16 - Sayak Das: 
+03/11/25, 10:16 - Sayak Das: <Media omitted>
+03/11/25, 10:16 - Sayak Das: <Media omitted>
+03/11/25, 10:16 - Sayak Das: Monday 11 to 1 
+2to class extra...
+03/11/25, 10:17 - Brainware Sumon: Sei madam tai ki ney ?
+03/11/25, 10:17 - Sayak Das: nope
+03/11/25, 10:17 - Sayak Das: ota thursday te
+03/11/25, 10:17 - Brainware Sumon: 3 different teachers?
+03/11/25, 10:17 - Sayak Das: yup
+03/11/25, 10:17 - Brainware Sumon: Ok
+03/11/25, 10:17 - Brainware Sumon: Thanks
+03/11/25, 10:17 - Sayak Das: welcome
+08/11/25, 19:43 - Sayak Das: <Media omitted>
+08/11/25, 19:43 - Sayak Das: <Media omitted>
+08/11/25, 19:43 - Sayak Das: <Media omitted>
+08/11/25, 19:43 - Sayak Das: <Media omitted>
+08/11/25, 19:43 - Sayak Das: python 👆
+08/11/25, 19:43 - Sayak Das: 
+08/11/25, 19:43 - Sayak Das: <Media omitted>
+08/11/25, 19:43 - Sayak Das: <Media omitted>
+08/11/25, 19:43 - Sayak Das: <Media omitted>
+08/11/25, 19:43 - Sayak Das: <Media omitted>
+08/11/25, 19:43 - Sayak Das: <Media omitted>
+08/11/25, 19:43 - Sayak Das: <Media omitted>
+08/11/25, 19:44 - Brainware Sumon: Probability er question ta
+08/11/25, 19:44 - Sayak Das: oita nei...
+08/11/25, 19:44 - Brainware Sumon: Ok
+05/12/25, 08:17 - Sayak Das: kireh? maths er kono suggestion peli?
+05/12/25, 09:54 - Brainware Sumon: Ekhono to paini
+05/12/25, 09:54 - Brainware Sumon: Dekho onno section theke manage korte hobe
+05/12/25, 09:59 - Sayak Das: <Media omitted>
+05/12/25, 10:10 - Brainware Sumon: Hya
+05/12/25, 10:29 - Sayak Das: tui pale amake dish kintu!
+05/12/25, 10:29 - Brainware Sumon: Ok
+05/12/25, 20:52 - Sayak Das: <Media omitted>
+05/12/25, 20:52 - Sayak Das: <Media omitted>
+05/12/25, 20:52 - Sayak Das: <Media omitted>
+05/12/25, 20:52 - Sayak Das: <Media omitted>
+05/12/25, 20:52 - Sayak Das: <Media omitted>
+05/12/25, 20:52 - Sayak Das: <Media omitted>
+05/12/25, 20:52 - Sayak Das: <Media omitted>
+05/12/25, 20:52 - Sayak Das: <Media omitted>
+05/12/25, 20:53 - Sayak Das: <Media omitted>
+05/12/25, 20:55 - Brainware Sumon: Okay
+06/12/25, 20:38 - Sayak Das: bro kichu peli?
+06/12/25, 20:48 - Brainware Sumon: Section A er ekta chele.k. bolechilam tader o deyni
+06/12/25, 20:49 - Brainware Sumon: Section F eo deyni
+06/12/25, 20:59 - Sayak Das: nongra bhabe mara porbo mone hochhe reh
+06/12/25, 21:07 - Brainware Sumon: Kono rokom pass jno kore jai
+14/12/25, 19:48 - Brainware Sumon: Lab er assignment gulo de
+16/12/25, 11:15 - Sayak Das: ami mama barite
+16/12/25, 11:15 - Brainware Sumon: Ok
+08/01/26, 15:17 - Sayak Das: Course Page - IIT Madras Degree Program https://study.iitm.ac.in/ds/course_pages/BSSE2001.html
+08/01/26, 15:20 - Sayak Das: https://www.youtube.com/playlist?list=PLZ2ps__7DhBajgl-4et7X2BjOIObqlp81
+08/01/26, 15:38 - Sayak Das: 🔹 PART A: Duplicating a Process (fork)
+📌 Code
+#include <stdio.h>
+#include <unistd.h>
+
+int main()
+{
+    pid_t pid;
+    pid = fork();
+
+    if (pid == 0)
+        printf("Child process\n");
+    else
+        printf("Parent process\n");
+
+    return 0;
+}
+08/01/26, 15:38 - Sayak Das: PART B: Waiting for a Process (wait())
+📌 Code
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/wait.h>
+#include <unistd.h>
+
+int main()
+{
+    pid_t cpid;
+
+    if (fork() == 0)
+        exit(0);           // Child exits
+    else
+        cpid = wait(NULL); // Parent waits
+
+    printf("Parent pid = %d\n", getpid());
+    printf("Child pid = %d\n", cpid);
+
+    return 0;
+}
+08/01/26, 15:38 - Sayak Das: PART C: Zombie Process
+📌 Code
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+int main()
+{
+    pid_t child_pid = fork();
+
+    if (child_pid > 0)
+        sleep(20);   // Parent sleeps
+    else
+        exit(0);     // Child exits immediately
+
+    return 0;
+}
+08/01/26, 15:38 - Sayak Das: #include <stdio.h>
+
+int main() {
+    int n, i, j;
+    int pid[10], at[10], bt[10], ct[10], tat[10], wt[10];
+    float avg_wt = 0, avg_tat = 0;
+
+    printf("Enter number of processes: ");
+    scanf("%d", &n);
+
+    // Input process details
+    for(i = 0; i < n; i++) {
+        pid[i] = i + 1;
+        printf("\nEnter Arrival Time for Process %d: ", pid[i]);
+        scanf("%d", &at[i]);
+        printf("Enter Burst Time for Process %d: ", pid[i]);
+        scanf("%d", &bt[i]);
+    }
+
+    // Sort processes based on Arrival Time (FCFS)
+    for(i = 0; i < n - 1; i++) {
+        for(j = i + 1; j < n; j++) {
+            if(at[i] > at[j]) {
+                int temp;
+                temp = at[i]; at[i] = at[j]; at[j] = temp;
+                temp = bt[i]; bt[i] = bt[j]; bt[j] = temp;
+                temp = pid[i]; pid[i] = pid[j]; pid[j] = temp;
+            }
+        }
+    }
+
+    // Calculate Completion Time
+    ct[0] = at[0] + bt[0];
+    for(i = 1; i < n; i++) {
+        if(ct[i - 1] < at[i])
+            ct[i] = at[i] + bt[i];
+        else
+            ct[i] = ct[i - 1] + bt[i];
+    }
+
+    // Calculate TAT and WT
+    for(i = 0; i < n; i++) {
+        tat[i] = ct[i] - at[i];
+        wt[i] = tat[i] - bt[i];
+        avg_wt += wt[i];
+        avg_tat += tat[i];
+    }
+
+    avg_wt /= n;
+    avg_tat /= n;
+
+    // Output
+    printf("\nPID\tAT\tBT\tCT\tTAT\tWT\n");
+    for(i = 0; i < n; i++) {
+        printf("%d\t%d\t%d\t%d\t%d\t%d\n",
+               pid[i], at[i], bt[i], ct[i], tat[i], wt[i]);
+    }
+
+    printf("\nAverage Waiting Time = %.2f", avg_wt);
+    printf("\nAverage Turnaround Time = %.2f\n", avg_tat);
+
+    return 0;
+}
+07/02/26, 13:20 - Sayak Das: 
+07/02/26, 13:20 - Sayak Das: <Media omitted>
+07/02/26, 13:20 - Sayak Das: <Media omitted>
+10/02/26, 13:34 - Sayak Das: 
+10/02/26, 13:34 - Sayak Das: <Media omitted>
+10/02/26, 13:34 - Sayak Das: <Media omitted>
+10/02/26, 13:34 - Sayak Das: <Media omitted>
+10/02/26, 13:34 - Sayak Das: <Media omitted>
+10/02/26, 13:39 - Sayak Das: Get ready to code commit push and then pull through the tough competition!! DoubleSlash is back with a bang  and it will test you for 36 hours on its 4th season.
+
+As the flagship event of IEEE JUSB, it features 8 dynamic tracks, challenging participants to think fast, build smarter, and deliver impactful solutions through hands-on innovation across hardware and software domains!
+
+*Register* and Submit NOW: https://doubleslash4.ieee-jaduniv.in
+10/02/26, 14:15 - Brainware Sumon: https://youtu.be/EAR7De6Goz4?si=ejCE7izJFJIqfPDW
+10/02/26, 14:16 - Sayak Das: cpp
+11/02/26, 20:08 - Sayak Das: eta dekhlam... onake knowledge gaps ache etaye tai ekta full course korchi... ct1 er por abar toke knock korbo...
+11/02/26, 22:34 - Brainware Sumon: Knowledge gap bolte ?
+11/02/26, 23:04 - Sayak Das: boddo straight forward, connect korte time lagchilo... ar practise o kom hoyeche... 1hr 30mins is not enough for me...
+11/02/26, 23:05 - Brainware Sumon: Suru korar jonno jetuku dorkar setuku toke diyechi, jodi tui etar baire giye kichu sikhte chas sikhte paris but tate time waste chara kichu hobe na
+11/02/26, 23:09 - Sayak Das: https://www.youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt
+11/02/26, 23:09 - Sayak Das: eta start korchilam...
+11/02/26, 23:10 - Brainware Sumon: Ekhon DSA sikhe ki korbi ??
+11/02/26, 23:14 - Sayak Das: competitive programming e DSA lagena?
+11/02/26, 23:14 - Sayak Das: ami to jantam eta DSA + Maths er combo 🥲
+11/02/26, 23:14 - Brainware Sumon: Lage kintu ekhon na jokhon dorkar porbe tokhon nijei bujhe Jabi
+11/02/26, 23:15 - Sayak Das: then what's next?
+11/02/26, 23:15 - Brainware Sumon: Jetuku bolechi setuku valo kore kor then question practice suru kor
+11/02/26, 23:15 - Sayak Das: ok.
+11/02/26, 23:16 - Brainware Sumon: Codechef e easy problem gulo korbi
+11/02/26, 23:16 - Sayak Das: sure.
+27/02/26, 16:48 - Sayak Das: Thanks bhai for the cover design... bhishoni bhalo hoyeche 🗿🔥
+27/02/26, 16:51 - Brainware Sumon: Okay
+27/02/26, 16:53 - Brainware Sumon: <Media omitted>
+27/02/26, 16:54 - Sayak Das: ok.
+05/03/26, 12:20 - Sayak Das: amr book ta tui ba souptik keo ekjon rakh... ami next week thake college e join korbo... tokhon collect kore nebo...
+05/03/26, 12:55 - Brainware Sumon: Ok
+05/03/26, 20:01 - Sayak Das: parlam na ektao... amr score 0 elo... tor kmn glo?
+05/03/26, 20:02 - Brainware Sumon: Sob korechi
+05/03/26, 20:02 - Brainware Sumon: Rank 10
+05/03/26, 20:02 - Sayak Das: baapreh 💀
+05/03/26, 20:03 - Brainware Sumon: Hmm
+09/03/26, 16:45 - Sayak Das: bhai kal tui ashbi to clg? 
+ashle amr book ta nea ashish...
+09/03/26, 16:47 - Brainware Sumon: Book ekhono delhivery hoyni
+09/03/26, 16:50 - Sayak Das: o achha, then ok...
+16/03/26, 22:24 - Sayak Das: parlam na ektao... 
+B	
+Right Maximum
+16/03/26, 22:25 - Sayak Das: etar sample cases match kore gechilo... but Test case 2 te gea gondogol korchilo... ar contest e ki baki test cases dekhte dayena??
+16/03/26, 22:25 - Sayak Das: Test case 2 te ki error hochhe jante parle ig 1ta solve hoye jeto.
+16/03/26, 22:26 - Brainware Sumon: Nijer code dekhe bojhar chesta kor ki bhul korechis
+16/03/26, 22:27 - Sayak Das: but sample cases milche... ar test case 2 na dekhte parle bujhbo ki kore??
+16/03/26, 22:32 - Sayak Das: #include <bits/stdc++.h>
+using namespace std;
+#define int long long
+
+int32_t main(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+        
+        int t;
+        cin >> t;
+        
+        while(t--){
+            
+            int n, count = 0;
+            vector<int> r_vec;
+            vector<int> n_vec;
+            
+            cin >> n;
+            
+            for(int i = 0; i < n; i++){
+                int v;
+                cin >> v;
+                r_vec.push_back(v);
+                n_vec.push_back(v);
+            }
+            
+            sort(n_vec.begin(), n_vec.end());
+            int m = n_vec[n-1];
+            
+            for(int i = n - 1; i >= 0; i--){
+                if(r_vec[i] == m){
+                    count += 1;
+                    r_vec.erase(r_vec.begin()+i, r_vec.end());
+                    break;
+                }
+            }
+            
+            sort(r_vec.begin(), r_vec.end());
+            
+            for(int i = 0; i < r_vec.size(); i++){
+                
+                if(r_vec[i] == r_vec[i - 1]){
+                    count += 0;
+                } else{
+                    count += 1;
+                }
+            }
+        
+            
+            cout << count << endl;
+            
+        }
+        
+    return 0;
+    
+}
+16/03/26, 22:32 - Sayak Das: eai korechi...
+16/03/26, 22:37 - Brainware Sumon: Eto complex kichu na
+16/03/26, 22:37 - Brainware Sumon: Problem valo kore pore bojh ki bolche
+16/03/26, 22:38 - Sayak Das: hmm.
+16/03/26, 22:38 - Sayak Das: ekhon bolishna... ami ekebare na parle then giggesh korbo toke... tor kmn glo btw?
+16/03/26, 22:40 - Brainware Sumon: Hoyeche mota moti
+16/03/26, 22:40 - Brainware Sumon: 4 ta korechi
+16/03/26, 22:41 - Sayak Das: tui kikore korish bhai? 😔
+ami kno parina 🥲
+16/03/26, 22:41 - Brainware Sumon: Hardwork kor parbi
+20/03/26, 13:44 - Brainware Sumon: #include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+
+using namespace __gnu_pbds;
+using namespace std;
+
+typedef long long ll;
+typedef tree<long long, null_type, less<long long>, rb_tree_tag, tree_order_statistics_node_update> ordered_set;
+#define int long long
+#define pb push_back
+#define ss second
+#define ff first
+#define all(v) v.begin(), v.end()
+#define ps(s) for(auto it=s.begin(); it!=s.end(); it++){cout<<*it<<" ";}cout<<endl;
+#define cy cout<<"YES"<<endl;
+#define cn cout<<"NO"<<endl;
+
+ll max(ll a, ll b) {if (a >= b)return a; else return b;}
+ll min(ll a, ll b) {if (a <= b)return a; else return b;}
+const ll N = 2e5;
+const ll INF = 2e18;
+
+void solve() {
+
+	string s;
+	cin >> s;
+
+	ll pos;
+	cin >> pos;
+	ll n = s.size();
+	vector<ll>positions;
+	vector<ll>d(n + 1);
+	stack<ll>st;
+	for (int i = 0; 1 + i < n; i++) {
+		st.push(i);
+		while (st.size() && s[st.top()] > s[i + 1]) {
+			positions.push_back(st.top());
+			st.pop();
+		}
+	}
+
+	for (int i = n - 1; i >= 0; i--) {
+		if (d[i] == 0) {
+			d[i] = 1;
+			positions.push_back(i);
+		}
+	}
+
+
+
+	ll size = pos;
+	vector<ll>c(n);
+	for (int i = 0; i < positions.size(); i++) {
+
+		if (n - i >= size) {
+
+			string st = "";
+			for (int j = 0; j < n; j++) {
+				if (c[j])continue;
+				st += s[j];
+			}
+			cout << st[size - 1];
+			return;
+		}
+		c[positions[i]] = 1;
+		size -= (n - i);
+	}
+
+
+
+
+
+
+
+
+
+}
+signed main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL); cout.tie(NULL);
+
+	int t;
+	cin >> t;
+	while (t--) {
+		solve();
+	}
+	return 0;
+}
+20/03/26, 13:48 - Sayak Das: ctrl + B -- run
+alt + Q -- Testcases
+21/03/26, 19:13 - Sayak Das: 1st er ta parlam sudhu... mone hochhe 4th er ta pare jabo... ekhon otai korchi... kore phelbo mone hochhe... hoye gale soln ta pathabo toke...
+21/03/26, 19:14 - Brainware Sumon: Group e msg korbi
+21/03/26, 19:15 - Sayak Das: achha
+21/03/26, 19:18 - Brainware Sumon: Upsolve korbi
+21/03/26, 19:21 - Sayak Das: achha... but shob kota parbona mone hochhe... 1, 2, 4 chara baki gulo pore kichu buste parchina... but haa 4 ar 2 ta korbo for sure. 👍
+21/03/26, 19:22 - Brainware Sumon: Ok
+26/03/26, 16:56 - Sayak Das: Congratulations bhai 🔥
+26/03/26, 19:22 - Brainware Sumon: Thank you bhai
+02/04/26, 11:33 - Sayak Das: <Media omitted>
+25/04/26, 20:11 - Sayak Das: <Media omitted>
+25/04/26, 20:11 - Sayak Das: <Media omitted>
+25/04/26, 20:16 - Brainware Sumon: Ok
+05/05/26, 20:30 - Sayak Das: <Media omitted>
+05/05/26, 20:30 - Sayak Das: <Media omitted>
+05/05/26, 20:30 - Sayak Das: <Media omitted>
+05/05/26, 20:30 - Sayak Das: <Media omitted>
+05/05/26, 20:30 - Sayak Das: <Media omitted>
+05/05/26, 20:31 - Brainware Sumon: Are module jekhane MCQ ache
+05/05/26, 20:51 - Sayak Das: ogulo nei
+05/05/26, 20:58 - Brainware Sumon: Ok
