@@ -1,6 +1,7 @@
 import re
 import pyperclip
 import pdfplumber 
+import argparse
 
 def phone_number_extractor(text):
     pattern = re.compile(r''' (?<![\w+]) (?: \+1 [\s\-\.]? (?:\(\d{3}\)|\d{3}) [\s\-\.]? \d{3} [\s\-\.]? \d{4} (?:\s?(?:ext\.?|x)\s?\d{1,5})? | \+91 [\s\-]? [6-9]\d{4} [\s\-]? \d{5} | \+34 [\s\-]? [6789]\d{2} (?:[\s\-]?\d{2}){3} | \+44 [\s\-]? (?:\(\d{2,4}\)|\d{2,4}) [\s\-]? \d{3,4} [\s\-]? \d{3,4} | \+82 [\s\-]? 10 [\s\-]? \d{4} [\s\-]? \d{4} | \+55 [\s\-]? (?:\(\d{2}\)|\d{2}) [\s\-]? 9\d{4} [\s\-]? \d{4} | \+46 [\s\-]? 7\d [\s\-]? \d{3} [\s\-]? \d{2} [\s\-]? \d{2} | \+971 [\s\-]? 5\d [\s\-]? \d{3} [\s\-]? \d{4} | \+33 [\s\-]? [67] (?:[\s\-]?\d{2}){4} | \+81 [\s\-]? \d{2} [\s\-]? \d{4} [\s\-]? \d{4} ) (?![\w-]) ''', re.VERBOSE)
@@ -119,13 +120,54 @@ def export_chat_extractor(text):
     
     return 0
 
-# main 
-f = input("Enter file name : ")
+# MAIN...
+
 text = ""
+
+# Parser Creation
+parser = argparse.ArgumentParser(description = "Regex extractor script")
+
+# File Argument
+parser.add_argument("--filename", required = False, help = "Path to the input file")
+
+# Feature flags
+parser.add_argument("--email", required = False, action="store_true")
+parser.add_argument("--phone", required = False, action="store_true")
+parser.add_argument("--insta", required = False, action="store_true")
+parser.add_argument("--linkedin", required = False, action="store_true")
+parser.add_argument("--github", required = False, action="store_true")
+parser.add_argument("--repo", required = False, action="store_true")
+parser.add_argument("--clipboard", required = False, action="store_true")
+parser.add_argument("--chat", required = False, action="store_true")
+
+# Run everything
+parser.add_argument("--all", required = False, action="store_true")
+
+args = parser.parse_args()
+
+if args.filename: 
+    f = args.filename
+    
+else:
+    f = input("Enter file name : ")
 
 if f.endswith(".txt"):
     with open(f, 'r', encoding="utf-8") as file:
         text = file.read()
+        
+elif f.endswith(".pdf"):
+    with pdfplumber.open(f) as pdf:
+        for page in pdf.pages:
+            page_text = page.extract_text()
+            if page_text:
+                text += page_text + "\n"
+    
+else:
+    print("Unsupported file format :(")
+
+if text != "":
+    
+    if args.filename and not(args.phone or args.email or args.clipboard or args.insta or args.linkedin or args.github or args.repo or args.chat) or (args.filename and args.all):
         phone_number_extractor(text)
         email_extractor(text)
         clipboard_matcher(text)
@@ -135,26 +177,29 @@ if f.endswith(".txt"):
         github_repo_extractor(text)
         export_chat_extractor(text)
         
-elif f.endswith(".pdf"):
-    with pdfplumber.open(f) as pdf:
-        for page in pdf.pages:
-            page_text = page.extract_text()
-            if page_text:
-                text += page_text + "\n"
-                
-    phone_number_extractor(text)
-    email_extractor(text)
-    clipboard_matcher(text)
-    insta_handle_extractor(text)
-    linkedin_profile_extractor(text)
-    github_profile_extractor(text)
-    github_repo_extractor(text)
-    export_chat_extractor(text)
+    else:                         
+        if args.phone:
+            phone_number_extractor(text)
+        if args.email:
+            email_extractor(text)
+        if args.clipboard:
+            clipboard_matcher(text)
+        if args.insta:
+            insta_handle_extractor(text)
+        if args.linkedin:
+            linkedin_profile_extractor(text)
+        if args.github:
+            github_profile_extractor(text)
+        if args.repo:
+            github_repo_extractor(text)
+        if args.chat:
+            export_chat_extractor(text)   
+              
+        
+       
+        
     
-else:
-    print("Unsupported file format :(")
 
-   
         
 
 
