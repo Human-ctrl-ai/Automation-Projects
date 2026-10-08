@@ -2,6 +2,7 @@ import re
 import pyperclip
 import pdfplumber 
 import argparse
+from pathlib import Path
 
 def phone_number_extractor(text):
     pattern = re.compile(r''' (?<![\w+]) (?: \+1 [\s\-\.]? (?:\(\d{3}\)|\d{3}) [\s\-\.]? \d{3} [\s\-\.]? \d{4} (?:\s?(?:ext\.?|x)\s?\d{1,5})? | \+91 [\s\-]? [6-9]\d{4} [\s\-]? \d{5} | \+34 [\s\-]? [6789]\d{2} (?:[\s\-]?\d{2}){3} | \+44 [\s\-]? (?:\(\d{2,4}\)|\d{2,4}) [\s\-]? \d{3,4} [\s\-]? \d{3,4} | \+82 [\s\-]? 10 [\s\-]? \d{4} [\s\-]? \d{4} | \+55 [\s\-]? (?:\(\d{2}\)|\d{2}) [\s\-]? 9\d{4} [\s\-]? \d{4} | \+46 [\s\-]? 7\d [\s\-]? \d{3} [\s\-]? \d{2} [\s\-]? \d{2} | \+971 [\s\-]? 5\d [\s\-]? \d{3} [\s\-]? \d{4} | \+33 [\s\-]? [67] (?:[\s\-]?\d{2}){4} | \+81 [\s\-]? \d{2} [\s\-]? \d{4} [\s\-]? \d{4} ) (?![\w-]) ''', re.VERBOSE)
@@ -120,6 +121,22 @@ def export_chat_extractor(text):
     
     return 0
 
+def recursive_walk(root_folder):
+    root = Path(root_folder)
+
+    if not root.exists():
+        print("Folder does not exist.")
+        return
+
+    print(f"\nScanning: {root}\n")
+
+    for item in root.rglob("*"):
+        if item.is_dir():
+            print(f"[FOLDER] {item.name}")
+
+        elif item.is_file():
+            print(f"[FILE]   {item.name}")
+
 # MAIN...
 
 text = ""
@@ -131,25 +148,22 @@ parser = argparse.ArgumentParser(description = "Regex extractor script")
 parser.add_argument("--filename", required = False, help = "Path to the input file")
 
 # Feature flags
-parser.add_argument("--email", required = False, action="store_true")
-parser.add_argument("--phone", required = False, action="store_true")
-parser.add_argument("--insta", required = False, action="store_true")
-parser.add_argument("--linkedin", required = False, action="store_true")
-parser.add_argument("--github", required = False, action="store_true")
-parser.add_argument("--repo", required = False, action="store_true")
-parser.add_argument("--clipboard", required = False, action="store_true")
-parser.add_argument("--chat", required = False, action="store_true")
+parser.add_argument("--email", required=False, action="store_true")
+parser.add_argument("--phone", required=False, action="store_true")
+parser.add_argument("--insta", required=False, action="store_true")
+parser.add_argument("--linkedin", required=False, action="store_true")
+parser.add_argument("--github", required=False, action="store_true")
+parser.add_argument("--repo", required=False, action="store_true")
+parser.add_argument("--clipboard", required=False, action="store_true")
+parser.add_argument("--chat", required=False, action="store_true")
+parser.add_argument("--root", required=False, help="Root folder path")
 
 # Run everything
-parser.add_argument("--all", required = False, action="store_true")
+parser.add_argument("--all", required=False, action="store_true")
 
 args = parser.parse_args()
 
-if args.filename: 
-    f = args.filename
-    
-else:
-    f = input("Enter file name : ")
+f = args.filename
 
 if f.endswith(".txt"):
     with open(f, 'r', encoding="utf-8") as file:
@@ -194,6 +208,12 @@ if text != "":
             github_repo_extractor(text)
         if args.chat:
             export_chat_extractor(text)   
+
+elif args.root:
+    recursive_walk(args.root)
+            
+else:
+    pass
               
         
        
